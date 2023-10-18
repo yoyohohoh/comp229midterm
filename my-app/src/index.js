@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AddProduct from './components/AddProduct/AddProduct';
+import SignUpUser from './components/SignUpUser/SignUpUser';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      {<AddProduct/>}
+      {<SignUpUser/>}
   </React.StrictMode>
 );
 

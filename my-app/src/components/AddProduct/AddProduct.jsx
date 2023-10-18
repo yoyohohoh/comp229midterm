@@ -16,7 +16,9 @@ export default function AddProduct() {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(
-      `Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}`
+      `Name: ${formData.name}, Description: ${formData.description}, 
+      Category: ${formData.category}, Quantity: ${formData.quantity}, 
+      Price: ${formData.price  }`
     );
   };
 
@@ -42,7 +44,7 @@ export default function AddProduct() {
         id="description"
         className="multiple__input"
         name="description"
-        value={formData.desscription}
+        value={formData.description}
         onChange={handleChange}
       />
 
@@ -86,10 +88,10 @@ export default function AddProduct() {
       <button className="submit__button" type="submit">
         SUBMIT
       </button>
-
       <button className="cancel__button" type="cancel">
         CANCEL
       </button>
+
     </form>
   );
 }
